@@ -1,0 +1,23 @@
+{
+  "name": "@entropy-kit/core",
+  "version": "1.0.0-alpha",
+  "exports": {
+    ".": "./build/exports.js",
+    "./server": "./build/server/server.exports.js"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "repository": "https://github.com/entropy-kit/core.git",
+  "author": "Dominik Rajkowski",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.5.0"
+  }
+}

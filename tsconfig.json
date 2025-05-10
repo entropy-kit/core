@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "lib": ["dom", "es2024"],
+    "module": "preserve",
+    "outDir": "build",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2024"
+  }
+}
