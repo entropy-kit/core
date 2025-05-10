@@ -11,6 +11,9 @@
   "repository": "https://github.com/entropy-kit/core.git",
   "author": "Dominik Rajkowski",
   "license": "MIT",
+  "scripts": {
+    "format": "prettier --write ."
+  },
   "devDependencies": {
     "@types/node": "^22.15.17",
     "prettier": "^3.5.3",
