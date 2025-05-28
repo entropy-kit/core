@@ -1,0 +1,24 @@
+import { HttpStatus } from './enums/http-status.enum';
+import { Utils } from '../utils/utils.class';
+
+export class HttpError extends Error {
+  public override readonly name = 'HttpError';
+
+  constructor(
+    public readonly statusCode = HttpStatus.NotFound,
+    customMessage?: string,
+    options: ErrorOptions = {},
+  ) {
+    const message =
+      customMessage ??
+      Utils.getEnumKey(statusCode, HttpStatus)?.replace(
+        /([a-z])([A-Z])/g,
+        '$1 $2',
+      ) ??
+      'HTTP Error';
+
+    super(message, options);
+
+    this.message = message;
+  }
+}

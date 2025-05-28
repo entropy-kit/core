@@ -3,7 +3,13 @@
   "version": "1.0.0-alpha",
   "exports": {
     ".": "./build/exports.js",
-    "./server": "./build/server/server.exports.js"
+    "./app": "./build/app/app.exports.js",
+    "./http": "./build/http/http.exports.js",
+    "./injector": "./build/injector/injector.exports.js",
+    "./logger": "./build/logger/logger.exports.js",
+    "./router": "./build/router/router.exports.js",
+    "./server": "./build/server/server.exports.js",
+    "./utils": "./build/utils/utils.exports.js"
   },
   "engines": {
     "node": ">=24.0.0"
@@ -12,15 +18,19 @@
   "author": "Dominik Rajkowski",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@types/node": "^22.15.17",
+    "@types/formidable": "^3.4.5",
+    "@types/node": "^22.15.19",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
-    "dotenv": "^16.5.0"
+    "chalk": "^5.4.1",
+    "formidable": "^3.5.4"
   }
 }

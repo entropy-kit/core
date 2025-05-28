@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "lib": ["dom", "es2024"],
-    "module": "preserve",
+    "module": "nodenext",
     "outDir": "build",
     "resolveJsonModule": true,
     "sourceMap": true,
